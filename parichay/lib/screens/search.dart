@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:parichay/colors/pallete.dart';
+import 'package:parichay/screens/place_info.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
 class Search extends StatefulWidget {
@@ -159,6 +160,14 @@ class _SearchState extends State<Search> {
                         itemBuilder: (context, index) {
                           return Card(
                             child: ListTile(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PlaceInfo(
+                                              locationName: suggestions[index],
+                                            )));
+                              },
                               title: Text(suggestions[index]),
                             ),
                           );

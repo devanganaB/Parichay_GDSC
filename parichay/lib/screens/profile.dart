@@ -2,7 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
+import 'package:parichay/screens/favourites.dart';
 import 'package:parichay/screens/login.dart';
+import 'package:parichay/screens/my_itinerary.dart';
 import '../colors/pallete.dart';
 import 'package:parichay/colors/pallete.dart';
 import 'package:parichay/screens/add_place.dart';
@@ -213,31 +215,41 @@ class _ProfileState extends State<Profile> {
               color: Pallete.primary,
             ),
             title: const Text(
-              'Change Password',
+              'My Itineraries',
               textAlign: TextAlign.left,
               style: TextStyle(),
             ),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyItinerary()));
+            },
           ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(
               horizontal: 8, vertical: 4), //apply padding to all four sides
-          child: ListTile(
-            shape: RoundedRectangleBorder(
-              side: BorderSide(
-                width: 1,
-                color: Pallete.grey,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Favourites()));
+            },
+            child: ListTile(
+              shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  width: 1,
+                  color: Pallete.grey,
+                ),
+                borderRadius: BorderRadius.circular(10),
               ),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            leading: Icon(
-              Icons.format_list_bulleted_sharp,
-              color: Pallete.primary,
-            ),
-            title: const Text(
-              'Bucket List',
-              textAlign: TextAlign.left,
-              style: TextStyle(),
+              leading: Icon(
+                Icons.format_list_bulleted_sharp,
+                color: Pallete.primary,
+              ),
+              title: const Text(
+                'Bucket List',
+                textAlign: TextAlign.left,
+                style: TextStyle(),
+              ),
             ),
           ),
         ),
@@ -365,15 +377,15 @@ class _ProfileState extends State<Profile> {
           ),
         ),
       ]),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => AddPlace()),
-          );
-        },
-        child: Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     Navigator.push(
+      //       context,
+      //       MaterialPageRoute(builder: (context) => AddPlace()),
+      //     );
+      //   },
+      //   child: Icon(Icons.add),
+      // ),
     );
   }
 }

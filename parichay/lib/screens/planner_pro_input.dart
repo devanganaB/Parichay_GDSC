@@ -306,7 +306,7 @@ class _TripPlannerProState extends State<TripPlannerPro> {
                           'transportMode': _transportMode,
                         };
                         String prompt = """Given the following parameters: User
-plane a detail trip to : $_destination from $_location for duration :$_duration days  ,number of people :${_numPeople.toInt()},mode of transport :$_transportMode, minimum budget ${_budgetRange.start},maximum budget${_budgetRange.end} ,food type $_foodType , Is associated with kids: $_isKids
+plane a detail trip to : $_destination from $_location for duration :$_duration days  ,number of people :${_numPeople.toInt()},mode of transport :$_transportMode, minimum budget ${_budgetRange.start / _numPeople.toInt()},maximum budget${_budgetRange.end / _numPeople.toInt()} ,food type $_foodType , Is associated with kids: $_isKids
 generate a complete trip day wise in which each day has number of activities
 The response shoulde be in a correct and perfect define  format with out any extra new line and spaces 
 the format of the response should be in  only 

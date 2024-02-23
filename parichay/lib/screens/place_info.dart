@@ -41,6 +41,7 @@ class _PlaceInfoState extends State<PlaceInfo> {
   String _review = '';
   bool _isButtonEnabled = false;
   var location;
+  bool _isLoading = true;
   late String locationName;
   late String imageUrl;
 
@@ -57,6 +58,7 @@ class _PlaceInfoState extends State<PlaceInfo> {
       final urls = data['urls'];
       setState(() {
         imageUrl = urls['regular'];
+        _isLoading = false;
       });
     } else {
       print('Failed to load image: ${response.statusCode}');
@@ -384,17 +386,19 @@ class _PlaceInfoState extends State<PlaceInfo> {
             children: [
               Card(
                 color: Pallete.primaryCard,
-                child: Image.network(
-                  imageUrl,
-                  height: 180,
-                  width: 250,
-                  fit: BoxFit.cover,
-                ),
+                child: _isLoading
+                    ? CircularProgressIndicator()
+                    : Image.network(
+                        imageUrl,
+                        height: 180,
+                        width: 250,
+                        fit: BoxFit.cover,
+                      ),
               ),
               Card(
                 color: Pallete.primaryCard,
                 child: Container(
-                    height: 50,
+                    height: 80,
                     child: Center(
                         child: Text(
                       locationName,
@@ -537,6 +541,9 @@ class _PlaceInfoState extends State<PlaceInfo> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 50,
+                    )
                   ],
                 ),
               ),
@@ -616,19 +623,19 @@ class _PlaceInfoState extends State<PlaceInfo> {
             ),
             child: FloatingActionButton(
                 onPressed: () async {
-            double lat = location.first.latitude;
-            double long = location.first.longitude;
-            print("The lat long is $lat $long");
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => StreetViewPanoramaInitDemo(
-                          place: widget.locationName,
-                          lat: lat,
-                          long: long,
-                          rating: rating,
-                        )));
-          },
+                  double lat = location.first.latitude;
+                  double long = location.first.longitude;
+                  print("The lat long is $lat $long");
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => StreetViewPanoramaInitDemo(
+                                place: widget.locationName,
+                                lat: lat,
+                                long: long,
+                                rating: rating,
+                              )));
+                },
                 backgroundColor: Pallete.primary,
                 child: const Text(
                   'Street View',

@@ -7,6 +7,7 @@ import 'package:parichay/common/places.dart';
 import 'package:parichay/screens/add_place.dart';
 import 'package:parichay/screens/calendar.dart';
 import 'package:parichay/screens/drawer.dart';
+import 'package:parichay/screens/imagecame.dart';
 import 'package:parichay/screens/maps.dart';
 import 'package:parichay/screens/place_info.dart';
 import 'package:parichay/screens/search.dart';
@@ -132,10 +133,7 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => PlaceInfo(
-                              locationName: 'Flora Fountain',
-                            )),
+                    MaterialPageRoute(builder: (context) => CalendarBody()),
                   );
                 },
                 icon: Icon(
@@ -150,18 +148,15 @@ class _HomeState extends State<Home> {
             Expanded(
               flex: 1,
               child: IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Maps()),
-                  );
-                },
-                icon: Icon(
-                  PhosphorIcons.map_pin,
-                  color: Pallete.whiteColor,
-                  size: 30,
-                ),
-              ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ImageCam()));
+                  },
+                  icon: Icon(
+                    Icons.camera_alt,
+                    color: Pallete.whiteColor,
+                    size: 30,
+                  )),
             )
           ],
         ),

@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:parichay/colors/pallete.dart';
+import 'package:parichay/screens/community.dart';
 import 'package:parichay/screens/favourites.dart';
 import 'package:parichay/screens/home.dart';
 import 'package:parichay/screens/planner.dart';
@@ -40,7 +41,7 @@ class _TabsScreenState extends State<TabsScreen>
     return Scaffold(
       body: TabBarView(
         controller: tabController,
-        children: [Home(), Favourites(), Profile(), TripPlannerPro()],
+        children: [Home(), Favourites(), Profile(), Cplanner()],
       ),
       // backgroundColor: Color(0x00FFFFFF),
       bottomNavigationBar: CurvedNavigationBar(

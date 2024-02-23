@@ -40,7 +40,11 @@ dependencies:
   google_fonts: ^6.1.0
   curved_navigation_bar: ^1.0.3
   skeletonizer: ^0.8.0
-  http:
+  http: ^1.2.0
+  google_gemini: ^0.1.2
+  
+  camera: ^0.10.5+9
+  permission_handler: ^11.2.0
 
   #firebase
   cloud_firestore: ^4.14.0
@@ -66,6 +70,7 @@ dependencies:
   markdown: ^7.2.1
   fluttertoast: ^8.2.4
   flutter_markdown: ^0.6.19
+  table_calendar:
   
 
 dev_dependencies:

@@ -86,3 +86,40 @@ Future<String> getTripItinerary(userInput) async {
     throw Exception('Failed to connect to OpenAI service: $error');
   }
 }
+
+Future<String> getRequest(String prompt) async {
+  var _response;
+  final String apiUrl =
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GPTKey.GapiKey}';
+  final Map<String, String> headers = {'Content-Type': 'application/json'};
+
+  try {
+    var query = {
+      "contents": [
+        {
+          "parts": [
+            {"text": prompt}
+          ]
+        }
+      ]
+    };
+
+    final response = await http.post(
+      Uri.parse(apiUrl),
+      headers: headers,
+      body: jsonEncode(query),
+    );
+
+    if (response.statusCode == 200) {
+      var result = jsonDecode(response.body);
+
+      _response = result['candidates'][0]['content']['parts'][0]['text'];
+      print(_response);
+      return _response; // Return the generated content as a string
+    } else {
+      throw Exception('Error occurred $response');
+    }
+  } catch (e) {
+    throw Exception('Error occurred $e');
+  }
+}

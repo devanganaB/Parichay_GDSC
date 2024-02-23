@@ -75,11 +75,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the model
-with open('C:/Users/Devangana/Desktop/db/flutterD/flutter_projects/Parichay_FB/server/recommendation_model.pkl', 'rb') as file:
+with open('server/recommendation_model.pkl', 'rb') as file:
     cosine_sim = pickle.load(file)
 
 # Load the dataset
-df = pd.read_csv('C:/Users/Devangana/Desktop/db/flutterD/flutter_projects/Parichay_FB/server/places_dataset.csv')
+df = pd.read_csv('server/places_dataset.csv')
 
 # Dictionary to store recommendations for each location
 recommendations_dict = {}

@@ -4,6 +4,7 @@ import 'package:parichay/colors/pallete.dart';
 import 'package:parichay/screens/favourites.dart';
 import 'package:parichay/screens/home.dart';
 import 'package:parichay/screens/planner.dart';
+import 'package:parichay/screens/planner_pro_input.dart';
 import 'package:parichay/screens/profile.dart';
 
 class TabsScreen extends StatefulWidget {
@@ -39,7 +40,7 @@ class _TabsScreenState extends State<TabsScreen>
     return Scaffold(
       body: TabBarView(
         controller: tabController,
-        children: [Home(), Favourites(), Profile(), Planner()],
+        children: [Home(), Favourites(), Profile(), TripPlannerPro()],
       ),
       // backgroundColor: Color(0x00FFFFFF),
       bottomNavigationBar: CurvedNavigationBar(

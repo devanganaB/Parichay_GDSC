@@ -4,6 +4,7 @@ import 'package:parichay/colors/pallete.dart';
 import 'package:parichay/common/custom_button.dart';
 import 'package:parichay/common/gap.dart';
 import 'package:parichay/common/places.dart';
+import 'package:parichay/screens/add_place.dart';
 import 'package:parichay/screens/calendar.dart';
 import 'package:parichay/screens/drawer.dart';
 import 'package:parichay/screens/maps.dart';
@@ -32,34 +33,26 @@ class _HomeState extends State<Home> {
       PlaceCardData(
           imageUrl:
               'https://cdnbbendpoint.azureedge.net/balancegurus/uploads/job-manager-uploads/gallery_images/2016/07/Ananda-Kriya-Yoga-Meditation-Ashram-%E2%80%A8Maharashtra10.jpg',
-          placeName: 'Yoga Centre'),
+          placeName: 'Museums'),
       PlaceCardData(
           imageUrl:
               'https://tse2.mm.bing.net/th?id=OIP.45iaO4ojPbK7UFmnSf2iJwHaFj&pid=Api&P=0&h=180',
-          placeName: 'Gurudwara'),
+          placeName: 'Neighborhoods'),
     ];
 
     List<PlaceCardData> explorePlaces = [
       PlaceCardData(
           imageUrl:
               'https://images.assettype.com/freepressjournal/2020-09/289b3214-aff7-4783-b133-3e123ff04d80/Tourism.jpg?w=1200&auto=format%2Ccompress&ogImage=true',
-          placeName: 'Agro Tourism'),
+          placeName: 'Nature'),
       PlaceCardData(
           imageUrl:
               'https://www.dailypioneer.com/uploads/2021/story/images/big/maharashtra-govt-holds-agri-tourism-conference-2021-05-13.jpg',
-          placeName: 'Rural Tourism'),
+          placeName: 'Neighborhoods'),
       PlaceCardData(
           imageUrl:
               'https://vignette.wikia.nocookie.net/travel/images/c/ce/Maharashtra_Highlights.jpg/revision/latest?cb=20100409143301&path-prefix=en',
-          placeName: 'Cultural Tourism'),
-      PlaceCardData(
-          imageUrl:
-              'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS1_FI.jpg',
-          placeName: 'Arts & Crafts'),
-      PlaceCardData(
-          imageUrl:
-              'https://images.thrillophilia.com/image/upload/s--5m8BEEt---/c_fill,f_auto,fl_strip_profile,g_auto,h_600,q_auto,w_975/v1/images/photos/000/148/677/original/1552909095_shutterstock_1149090467.jpg.jpg?1552909095',
-          placeName: 'Eco-Tourism'),
+          placeName: 'Landmarks'),
     ];
 
     List<PlaceCardData> discoverPlaces = [
@@ -78,7 +71,7 @@ class _HomeState extends State<Home> {
       PlaceCardData(
           imageUrl:
               'https://tse1.mm.bing.net/th?id=OIP.39dwslXSEIBba9lZg8Z1dgHaEx&pid=Api&P=0&h=180',
-          placeName: 'Nature'),
+          placeName: 'History'),
     ];
 
     return Scaffold(
@@ -196,22 +189,67 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // floatingActionButton: Container(
+      //   width: 250,
+      //   decoration: BoxDecoration(
+      //     borderRadius: BorderRadius.circular(4),
+      //   ),
+      //   child: FloatingActionButton(
+      //       onPressed: () {
+      //         Navigator.push(context,
+      //             MaterialPageRoute(builder: (context) => SpecialityMh()));
+      //       },
+      //       backgroundColor: Pallete.primary,
+      //       child: const Text(
+      //         'Speciality of Maharashtra',
+      //         style: TextStyle(color: Pallete.whiteColor),
+      //       )),
+      // ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: Container(
-        width: 250,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(4),
-        ),
-        child: FloatingActionButton(
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SpecialityMh()));
-            },
-            backgroundColor: Pallete.primary,
-            child: const Text(
-              'Speciality of Maharashtra',
-              style: TextStyle(color: Pallete.whiteColor),
-            )),
+      floatingActionButton: Row(
+        children: [
+          SizedBox(
+            width: 33,
+          ),
+          Container(
+            width: 150,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SpecialityMh()));
+                },
+                backgroundColor: Pallete.primary,
+                child: const Text(
+                  'Festivals of Inida',
+                  style: TextStyle(color: Pallete.whiteColor),
+                )),
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          Container(
+            width: 150,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: FloatingActionButton(
+                onPressed: () async {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AddPlace()),
+                  );
+                },
+                backgroundColor: Pallete.primary,
+                child: const Text(
+                  'Add a Place',
+                  style: TextStyle(color: Pallete.whiteColor),
+                )),
+          )
+        ],
       ),
     );
   }

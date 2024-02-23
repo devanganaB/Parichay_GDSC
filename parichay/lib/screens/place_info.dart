@@ -12,6 +12,7 @@ import 'package:geocoding/geocoding.dart';
 // import 'package:parichay/colors/pallete.dart';
 import 'package:background_location/background_location.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:parichay/screens/registerGuide.dart';
 import 'package:parichay/screens/street_view.dart';
 import 'package:http/http.dart' as http;
 
@@ -543,20 +544,78 @@ class _PlaceInfoState extends State<PlaceInfo> {
           ),
         ),
       ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Pallete.whiteColor,
-            backgroundColor: Pallete.primary, // Text color
-            // padding: const EdgeInsets.all(20),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30.0),
-            ),
-            // elevation: 5,
-            //minimumSize: Size(double.infinity, 0), // Full width
+      // bottomNavigationBar: Padding(
+      //   padding: const EdgeInsets.all(8.0),
+      //   child: ElevatedButton(
+      //     style: ElevatedButton.styleFrom(
+      //       foregroundColor: Pallete.whiteColor,
+      //       backgroundColor: Pallete.primary, // Text color
+      //       // padding: const EdgeInsets.all(20),
+      //       shape: RoundedRectangleBorder(
+      //         borderRadius: BorderRadius.circular(30.0),
+      //       ),
+      //       // elevation: 5,
+      //       //minimumSize: Size(double.infinity, 0), // Full width
+      //     ),
+      //     onPressed: () async {
+      //       double lat = location.first.latitude;
+      //       double long = location.first.longitude;
+      //       print("The lat long is $lat $long");
+      //       Navigator.push(
+      //           context,
+      //           MaterialPageRoute(
+      //               builder: (context) => StreetViewPanoramaInitDemo(
+      //                     place: widget.locationName,
+      //                     lat: lat,
+      //                     long: long,
+      //                     rating: rating,
+      //                   )));
+      //     },
+      //     child: Container(
+      //       height: 60,
+      //       width: double.infinity,
+      //       alignment: Alignment.center,
+      //       child: Text(
+      //         'Street View',
+      //         style: TextStyle(color: Pallete.whiteColor),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: Row(
+        children: [
+          SizedBox(
+            width: 20,
           ),
-          onPressed: () async {
+          Container(
+            width: 150,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => RegisterGuide(
+                            locationId: locationId,
+                          )));
+                },
+                backgroundColor: Pallete.primary,
+                child: const Text(
+                  'Work as Guide',
+                  style: TextStyle(color: Pallete.whiteColor),
+                )),
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          Container(
+            width: 150,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: FloatingActionButton(
+                onPressed: () async {
             double lat = location.first.latitude;
             double long = location.first.longitude;
             print("The lat long is $lat $long");
@@ -570,16 +629,13 @@ class _PlaceInfoState extends State<PlaceInfo> {
                           rating: rating,
                         )));
           },
-          child: Container(
-            height: 60,
-            width: double.infinity,
-            alignment: Alignment.center,
-            child: Text(
-              'Street View',
-              style: TextStyle(color: Pallete.whiteColor),
-            ),
-          ),
-        ),
+                backgroundColor: Pallete.primary,
+                child: const Text(
+                  'Street View',
+                  style: TextStyle(color: Pallete.whiteColor),
+                )),
+          )
+        ],
       ),
     );
   }

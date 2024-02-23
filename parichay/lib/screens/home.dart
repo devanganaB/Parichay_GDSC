@@ -224,7 +224,7 @@ class _HomeState extends State<Home> {
                 },
                 backgroundColor: Pallete.primary,
                 child: const Text(
-                  'Festivals of Inida',
+                  'Festivals of India',
                   style: TextStyle(color: Pallete.whiteColor),
                 )),
           ),

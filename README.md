@@ -1,6 +1,11 @@
 **Parichay Mahan Rashtra _an app to discover Maharashtra_**
 
-## :iphone:Overview
+## :iphone:Try the app yourself
+https://drive.google.com/drive/folders/1dbH_iAK30GPnYJHOZtj5TgE-29kfg4jE?usp=sharing
+Download the apk file of our app in you Android phone and explore yourself
+(PS Dont forget to run the backend server to see recommendations)
+
+## :star:Overview
 Parichay Mahan-Rashtra, the Maharashtra Tourism app, reveals hidden gems, offering a unique exploration experience. Beyond well-known sites, it's a comprehensive guide to the state's rich culture, history, and traditions. Focused on tourist engagement, it showcases lesser-known destinations, providing authentic information for diverse preferences. Committed to presenting Maharashtra's true beauty, it caters to tourists, travelers, and researchers seeking distinctive insights.
 
 ## :rocket:Features

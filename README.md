@@ -94,6 +94,7 @@ Parichay utilizes advanced technologies to offer users an immersive and seamless
 - **Gemini**: Parichay leverages Gemini, a GraphQL client for Flutter, to efficiently fetch and manage data from the server. Gemini streamlines data fetching and state management, optimizing performance and reducing network overhead.
 
 - **Screenshots**:
+
 ![Screenshot 2024-02-25 104354](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/30388260-2031-4adf-b977-0b0c5d4a040b)
 
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/1f770d7c-47cc-40a2-a5b3-a70fed66f1cd)

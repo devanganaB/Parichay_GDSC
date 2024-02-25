@@ -29,7 +29,7 @@ Follow these steps to install and run TravelApp on your local machine:
 
 1. **Clone Repository:**
    ```
-   git clone https://github.com/devanganaB/Parichay_GDSC
+   git clone https://github.com/devanganaB/Parichay_GDSC.git
    ```
 
 2. **Navigate to Directory:**
@@ -66,9 +66,15 @@ Follow these steps to install and run TravelApp on your local machine:
    python app.py
    ```
 10. **Start the Admin app**
-    ```
-    ng serve
-    ```
+    - Switch to a new terminal in the same project
+     
+     ```
+     cd admin-app
+     ```
+     **Run the Server**
+     ```
+     ng serve
+     ```
 
 ##  :earth_americas:United Nations's Sustainable Development goal and target
 Our solution aligns with United Nations' Sustainable Development Goal 8 - Decent Work and Economic Growth. The inspiration stems from the untapped potential of numerous Maharashtra destinations capable of fostering economic growth through tourism. By highlighting these hidden gems, our project aims to generate employment opportunities and contribute to the overall economic well-being of the region.

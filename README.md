@@ -4,16 +4,16 @@
 Parichay Mahan-Rashtra, the Maharashtra Tourism app, reveals hidden gems, offering a unique exploration experience. Beyond well-known sites, it's a comprehensive guide to the state's rich culture, history, and traditions. Focused on tourist engagement, it showcases lesser-known destinations, providing authentic information for diverse preferences. Committed to presenting Maharashtra's true beauty, it caters to tourists, travelers, and researchers seeking distinctive insights.
 
 ## Features
--**Destination Selection:**Choose from various categories of places to visit in Maharashtra.Access detailed information about selected places, including ratings sourced from Firebase.
--**Virtual Tour:**Embark on a virtual tour of dream destinations using Google Maps' Street View feature.
--**Bucket List:**Curate a personalized bucket list of favorite places for future reference.Receive tailored recommendations based on your selections.
--**Guide Recruitment:**Join as a local guide by filling out necessary details.Authenticate guides securely using IDFY API integration.
--**Festival Section:**Stay informed about upcoming festivals in Maharashtra, including dates and locations.
--**AI Itinerary Planning:**Let AI assist in planning trip itineraries based on your preferences.Customize and share itineraries with others seamlessly.
--**Transport Booking:**Book flights and trains directly within the app via the transport section.
--**Monument Identification AI:**Utilize AI to identify monuments and gain insights about them instantly.
--**Add a Place:**Suggest new places to be added to the app.
--**Admin Panel:**Admin panel integration for verifying and adding suggested places to Firebase.
+-**Destination Selection:** Choose from various categories of places to visit in Maharashtra.Access detailed information about selected places, including ratings sourced from Firebase.
+-**Virtual Tour:** Embark on a virtual tour of dream destinations using Google Maps' Street View feature.
+-**Bucket List:** Curate a personalized bucket list of favorite places for future reference.Receive tailored recommendations based on your selections.
+-**Guide Recruitment:** Join as a local guide by filling out necessary details.Authenticate guides securely using IDFY API integration.
+-**Festival Section:** Stay informed about upcoming festivals in Maharashtra, including dates and locations.
+-**AI Itinerary Planning:** Let AI assist in planning trip itineraries based on your preferences.Customize and share itineraries with others seamlessly.
+-**Transport Booking:** Book flights and trains directly within the app via the transport section.
+-**Monument Identification AI:** Utilize AI to identify monuments and gain insights about them instantly.
+-**Add a Place:** Suggest new places to be added to the app.
+-**Admin Panel:** Admin panel integration for verifying and adding suggested places to Firebase.
 
 ## Installation Guide
 Follow these steps to install and run TravelApp on your local machine:

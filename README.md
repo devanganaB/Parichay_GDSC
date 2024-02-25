@@ -113,6 +113,7 @@ Parichay utilizes advanced technologies to offer users an immersive and seamless
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/86a67846-e112-4516-a517-4730ea59153a)
 
 **Maps**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/0ac1e0f6-bda6-4801-9c1a-1d4f01b8ed7f)
 
 **AI planner**
@@ -132,6 +133,7 @@ Parichay utilizes advanced technologies to offer users an immersive and seamless
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/304e34b9-32d7-4826-90bb-ce8508d99b2e)
 
 **Place identifier**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/1bb61b5f-6d05-4dda-915c-19da4cff5b46)
 
 

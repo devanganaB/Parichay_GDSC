@@ -70,5 +70,20 @@ Follow these steps to install and run TravelApp on your local machine:
 ##  :earth_americas:United Nations's Sustainable Development goal and target
 Our solution aligns with United Nations' Sustainable Development Goal 8 - Decent Work and Economic Growth. The inspiration stems from the untapped potential of numerous Maharashtra destinations capable of fostering economic growth through tourism. By highlighting these hidden gems, our project aims to generate employment opportunities and contribute to the overall economic well-being of the region.
 
+## :gear:Technology
+
+Parichay utilizes advanced technologies to offer users an immersive and seamless travel experience. The app is built using a combination of robust frameworks and platforms, ensuring reliability, scalability, and performance.
+
+- **Flutter**: Parichay's front-end is developed using Flutter, Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. Flutter enables smooth animations, expressive UI, and fast development cycles.
+
+- **Firebase**: Firebase powers Parichay's back-end, providing a comprehensive suite of tools for app development, including authentication, real-time database, cloud storage, and hosting. Firebase ensures seamless data synchronization and scalable infrastructure.
+
+- **Angular**: Parichay's admin panel is built using Angular, a platform for building web applications with TypeScript and HTML. Angular offers a powerful framework for creating dynamic and interactive user interfaces, making it ideal for managing and verifying user-generated content.
+
+- **Google Maps**: Parichay integrates Google Maps for location-based services, enabling users to explore destinations, plan itineraries, and navigate with ease. Google Maps offers accurate geolocation data, interactive maps, and street views for a rich and immersive travel experience.
+
+- **Gemini**: Parichay leverages Gemini, a GraphQL client for Flutter, to efficiently fetch and manage data from the server. Gemini streamlines data fetching and state management, optimizing performance and reducing network overhead.
+
+
 
 

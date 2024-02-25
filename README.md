@@ -66,6 +66,9 @@ Follow these steps to install and run TravelApp on your local machine:
    python app.py
    ```
 10. **Start the Admin app**
+    ```
+    ng serve
+    ```
 
 ##  :earth_americas:United Nations's Sustainable Development goal and target
 Our solution aligns with United Nations' Sustainable Development Goal 8 - Decent Work and Economic Growth. The inspiration stems from the untapped potential of numerous Maharashtra destinations capable of fostering economic growth through tourism. By highlighting these hidden gems, our project aims to generate employment opportunities and contribute to the overall economic well-being of the region.

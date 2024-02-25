@@ -55,11 +55,11 @@ Follow these steps to install and run TravelApp on your local machine:
 7. **Start the backend server**
    - Switch to a new terminal in the same project
    ```
-   cd Backend
+   cd server
    ```
 8. **Install dependencies**
    ```
-   pip install requirements.txt
+   pip install Flask flask-cors pandas
    ```
 9. **Run the Flask Server**
    ```

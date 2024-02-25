@@ -101,27 +101,34 @@ Parichay utilizes advanced technologies to offer users an immersive and seamless
 - ## Screenshots:
 
 **Login**
+
 ![Screenshot 2024-02-25 104354](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/30388260-2031-4adf-b977-0b0c5d4a040b)
 
 **Homepage**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/1f770d7c-47cc-40a2-a5b3-a70fed66f1cd)
 
 **Places**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/86a67846-e112-4516-a517-4730ea59153a)
 
 **Maps**
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/0ac1e0f6-bda6-4801-9c1a-1d4f01b8ed7f)
 
 **AI planner**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/df118f4c-d3fc-4a39-8f4c-a7eaa867ca3d)
 
 **Work as Guide**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/543f301d-1e35-473b-aac0-30661a891a73)
 
 **Add a place**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/82768467-7f95-4f0e-8465-2bc6ff87aa66)
 
 **Festival**
+
 ![image](https://github.com/devanganaB/Parichay_GDSC/assets/111975037/304e34b9-32d7-4826-90bb-ce8508d99b2e)
 
 **Place identifier**

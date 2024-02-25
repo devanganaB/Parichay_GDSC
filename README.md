@@ -1,9 +1,9 @@
 **Parichay Mahan Rashtra _an app to discover Maharashtra_**
 
-## Overview
+## :iphone:Overview
 Parichay Mahan-Rashtra, the Maharashtra Tourism app, reveals hidden gems, offering a unique exploration experience. Beyond well-known sites, it's a comprehensive guide to the state's rich culture, history, and traditions. Focused on tourist engagement, it showcases lesser-known destinations, providing authentic information for diverse preferences. Committed to presenting Maharashtra's true beauty, it caters to tourists, travelers, and researchers seeking distinctive insights.
 
-## Features
+## :rocket:Features
 -**Destination Selection:** Choose from various categories of places to visit in Maharashtra.Access detailed information about selected places, including ratings sourced from Firebase.
 
 -**Virtual Tour:** Embark on a virtual tour of dream destinations using Google Maps' Street View feature.
@@ -24,7 +24,7 @@ Parichay Mahan-Rashtra, the Maharashtra Tourism app, reveals hidden gems, offeri
 
 -**Admin Panel:** Admin panel integration for verifying and adding suggested places to Firebase.
 
-## Installation Guide
+## :computer:Installation Guide
 Follow these steps to install and run TravelApp on your local machine:
 
 1. **Clone Repository:**
@@ -67,7 +67,7 @@ Follow these steps to install and run TravelApp on your local machine:
    ```
 10. **Start the Admin app**
 
-##  United Nations's Sustainable Development goal and target
+##  :earth_americas:United Nations's Sustainable Development goal and target
 Our solution aligns with United Nations' Sustainable Development Goal 8 - Decent Work and Economic Growth. The inspiration stems from the untapped potential of numerous Maharashtra destinations capable of fostering economic growth through tourism. By highlighting these hidden gems, our project aims to generate employment opportunities and contribute to the overall economic well-being of the region.
 
 
